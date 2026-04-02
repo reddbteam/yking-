@@ -1,0 +1,17 @@
+id: nodejs
+version: 1.0.0
+
+distro: ubuntu
+
+execute:
+  - apt update
+  - apt install -y nodejs npm
+  - node -v
+  - npm -v
+
+entrypoint: /bin/bash
+
+workdir: /root
+
+env:
+  NODE_ENV: development
